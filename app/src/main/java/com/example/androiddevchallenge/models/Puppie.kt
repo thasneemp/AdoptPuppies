@@ -13,13 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge
+package com.example.androiddevchallenge.models
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
-class ExampleUnitTest {
-    // Add unit tests here
-}
+import com.google.gson.annotations.SerializedName
+
+data class Puppie(
+    @SerializedName("name") val name: String?,
+    @SerializedName("description") val description: String?,
+    @SerializedName("url") val imgUrl: String?
+)
